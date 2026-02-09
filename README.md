@@ -1,0 +1,63 @@
+# React + TypeScript + Vite
+
+This is a template vite project with basic MUI styling, and base packages.
+
+## Usage
+
+- Run `npm install`
+- Run `npm run dev`
+
+## Notes
+
+I created this via:
+
+- `npm create vite@latest`
+- Followed instructions
+- Pick React -> TypeScript + React Compiler
+- Removed css and images
+- Cleaned up code
+- Converted `App.tsx` to named export.
+- Added prettier
+
+## Add MUI
+
+- `npm install @mui/material @emotion/react @emotion/styled`
+- `npm install @fontsource/roboto`
+
+### Add code
+
+```javascript
+import '@fontsource/roboto/300.css';
+import '@fontsource/roboto/400.css';
+import '@fontsource/roboto/500.css';
+import '@fontsource/roboto/700.css';
+```
+
+## Add react-query
+
+- `npm install @tanstack/react-query`
+
+## Add zod
+
+- `npm install zod`
+
+## Add react-error-boundary
+
+- `npm install react-error-boundary`
+
+## Add lint rules
+
+- `npm install eslint-plugin-unused-imports`
+- `npm install --save-dev --save-exact prettier`
+
+### Add code to eslintrc
+
+```javascript
+    plugins: {
+      'unused-imports': unusedImports,
+    },
+    rules: {
+      'unused-imports/no-unused-imports': 'error',
+      'react-refresh/only-export-components': 'error',
+    },
+```
