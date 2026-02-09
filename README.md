@@ -41,6 +41,10 @@ import '@fontsource/roboto/700.css';
 
 - `npm install zod`
 
+## Add constate
+
+- `npm install constate`
+
 ## Add react-error-boundary
 
 - `npm install react-error-boundary`
