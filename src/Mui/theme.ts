@@ -12,6 +12,15 @@ export const APP_THEME = createTheme({
     h3: {
       fontSize: '1.5rem',
     },
+    h4: {
+      fontSize: '1.25rem',
+    },
+    h5: {
+      fontSize: '1.125rem',
+    },
+    h6: {
+      fontSize: '1rem',
+    },
   },
   palette: {
     mode: 'dark',

@@ -3,6 +3,7 @@ import { APP_THEME } from './Mui/theme';
 import { ErrorBoundary } from 'react-error-boundary';
 import { QueryClientProvider } from '@tanstack/react-query';
 import { queryClient } from './queryClient';
+import { Text } from './Mui/Text';
 
 export function App() {
   return (
@@ -10,7 +11,7 @@ export function App() {
       <QueryClientProvider client={queryClient}>
         <ThemeProvider theme={APP_THEME}>
           <CssBaseline />
-          Hello World
+          <Text>Hello World</Text>
         </ThemeProvider>
       </QueryClientProvider>
     </ErrorBoundary>
