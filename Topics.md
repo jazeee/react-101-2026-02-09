@@ -19,6 +19,7 @@ code as we delve into concepts related to our work.
    1. useRef
    1. Other state management tools - URL, browser storage.
 1. Common patterns in code - aka, the reasons behind my PR comments
+   1. Set state imperatively, not in render.
    1. Split components up by file - Hot Module Reloading, code splitting, state management, git review and file length
    1. Unnecessary memoization
    1. Named function arguments
