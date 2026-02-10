@@ -1,5 +1,7 @@
 import { createTheme } from '@mui/material';
 
+const PAPER_COLOR = '#3d1f5c';
+
 export const APP_THEME = createTheme({
   typography: {
     h1: {
@@ -24,5 +26,36 @@ export const APP_THEME = createTheme({
   },
   palette: {
     mode: 'dark',
+    primary: {
+      main: '#a863ed',
+    },
+    secondary: {
+      main: '#3f51b5',
+    },
+    background: {
+      default: '#121212',
+      paper: PAPER_COLOR,
+    },
+    error: {
+      main: '#c20909',
+    },
+  },
+  components: {
+    MuiTextField: {
+      styleOverrides: {
+        root: {
+          '& .MuiInputBase-root': {
+            backgroundColor: PAPER_COLOR,
+          },
+        },
+      },
+    },
+    MuiOutlinedInput: {
+      styleOverrides: {
+        root: {
+          backgroundColor: PAPER_COLOR,
+        },
+      },
+    },
   },
 });
